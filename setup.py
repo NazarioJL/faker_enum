@@ -27,7 +27,7 @@ setup(
     description="Enum provider for the Faker Python package.",
     long_description=README,
     classifiers=[
-        "Development Status :: 1 - Alpha",
+        "Development Status :: 3 - Alpha",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
