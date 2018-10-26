@@ -35,8 +35,8 @@ Usage
     # One of [Color.RED, Color.GREEN, Color.BLUE]
 
 
-.. |travis_ci| image:: https://img.shields.io/travis/NazarioJL/faker_web/master.svg?style=flat-square&label=unix%20build
-    :target: http://travis-ci.org/NazarioJL/faker_enum
+.. |travis_ci| image:: https://travis-ci.com/NazarioJL/faker_enum.svg?branch=master
+    :target: https://travis-ci.com/NazarioJL/faker_enum
     :alt: Build status of the master branch
 
 .. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
