@@ -39,3 +39,14 @@ def test_int_enum(fake):
 def test_single_member_enum(fake):
     result = fake.enum(SingleMemberEnum)
     assert result == SingleMemberEnum.A
+
+
+def test_all_values_are_chosen(fake):
+    # 1 in 2**32 probability of this giving a false negative
+    found_a = False
+    found_b = False
+    for _ in range(1, 32):
+        found_a = found_a or (fake.enum(StubEnum) == StubEnum.A)
+        found_b = found_b or (fake.enum(StubEnum) == StubEnum.B)
+
+    assert found_a and found_b, "One of the expected values was not returned."
